@@ -16,15 +16,10 @@ import { Review } from './review.model';
         <h3>Reviews</h3>
         <div *ngFor="let currentReview of reviews">
           <div *ngIf="currentReview.restaurantName === restaurant.name" class="well">
-            <div *ngIf="currentReview === null">
-              <h4>NO REVIEWS</h4>
-            </div>
-            <div *ngIf="currentReview">
-              <h3>{{currentReview.title}}</h3>
-              <h4>Review Comment: {{currentReview.comment}}</h4>
-              <h4>Overall Rating: {{currentReview.rating}}</h4>
-              <h4>Approximate Wait Time: {{currentReview.waitTime}} mins</h4>
-            </div>
+            <h3>{{currentReview.title}}</h3>
+            <h4>Review Comment: {{currentReview.comment}}</h4>
+            <h4>Overall Rating: {{currentReview.rating}}</h4>
+            <h4>Approximate Wait Time: {{currentReview.waitTime}} mins</h4>
           </div>
         </div>
         <hr>
