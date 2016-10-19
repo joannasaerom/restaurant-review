@@ -9,13 +9,12 @@ import { Review } from './review.model';
   <div class="container">
    <h1>Restaurant Reviews</h1>
    <div class="col-md-5">
-   <h2>Restaurants</h2>
      <restaurant-list
       [childRestaurantList]="masterRestaurantList"
       (clickSender)="showDetails($event)"
      ></restaurant-list>
     </div>
-    <div class="col-md-5 col-md-offset-2">
+    <div class="col-md-6 col-md-offset-1">
     <restaurant-details
       [restaurant]="selectedRestaurant"
     ></restaurant-details>

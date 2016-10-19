@@ -14,9 +14,11 @@ import { Restaurant } from './restaurant.model';
       </select>
     </div>
     <br>
-    <div class="restaurant-list well" *ngFor="let currentRestaurant of childRestaurantList | cuisines:selectedCuisine">
-      <h2 (click)="showRestaurant(currentRestaurant)">{{currentRestaurant.name}}</h2>
-      <h4>{{currentRestaurant.specialty}}</h4>
+    <div class="restaurant-list">
+      <div class="well" *ngFor="let currentRestaurant of childRestaurantList | cuisines:selectedCuisine">
+        <h2 (click)="showRestaurant(currentRestaurant)">{{currentRestaurant.name}}</h2>
+        <h4>{{currentRestaurant.specialty}}</h4>
+      </div>
     </div>
   `
 })

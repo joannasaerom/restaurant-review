@@ -22,7 +22,8 @@ import { Review } from './review.model';
       <textarea class="form-control" #comment name="comment"></textarea>
       <label for="waitTime">Approximate Wait Time (min)</label>
       <input class="form-control" type="text" #waitTime name="waitTime">
-      <button (click)="addReview(title.value, comment.value, rating.value, waitTime.value); title.value=''; rating.value=''; comment.value=''; waitTime.value='';">Add Review</button>
+      <br>
+      <button (click)="addReview(title.value, comment.value, rating.value, waitTime.value); title.value=''; rating.value=''; comment.value=''; waitTime.value='';" class="btn btn-default center-block">Add Review</button>
       </form>
     </div>
   `
