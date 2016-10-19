@@ -22,6 +22,7 @@ import { Review } from './review.model';
           </div>
         </div>
         <add-review
+        [currentRestaurant]="restaurant"
         (newReviewSender)="addReview($event)"
         ></add-review>
       </div>
