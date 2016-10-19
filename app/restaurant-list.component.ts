@@ -4,10 +4,9 @@ import { Restaurant } from './restaurant.model';
 @Component ({
   selector: 'restaurant-list',
   template: `
-    <div class="restaurant-list" *ngFor="let currentRestaurant of childRestaurantList">
-      <h2>{{currentRestaurant.name}}</h2>
+    <div class="restaurant-list well" *ngFor="let currentRestaurant of childRestaurantList">
+      <h2 (click)="showRestaurant(currentRestaurant)">{{currentRestaurant.name}}</h2>
       <h4>{{currentRestaurant.specialty}}</h4>
-      <button (click)="showRestaurant(currentRestaurant)">Show Details</button>
     </div>
   `
 })

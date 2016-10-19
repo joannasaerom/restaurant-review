@@ -1,3 +1,7 @@
 h1 {
-  color: blue;
+  text-align: center;
+  margin-bottom: 60px;
+}
+h2 {
+  cursor: pointer;
 }

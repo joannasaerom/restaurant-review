@@ -9,16 +9,15 @@ import { RestaurantComponent } from './restaurant.component';
   template: `
   <div class="container">
    <h1>Restaurant Reviews</h1>
-   <div class="col-md-6">
+   <div class="col-md-5">
      <restaurant-list
       [childRestaurantList]="masterRestaurantList"
       (clickSender)="showDetails($event)"
      ></restaurant-list>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5 col-md-offset-2">
     <restaurant-details
       [restaurant]="selectedRestaurant"
-
     ></restaurant-details>
     </div>
   `
