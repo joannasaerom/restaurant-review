@@ -7,7 +7,7 @@ import { Review } from './review.model';
   template: `
     <div>
       <form id="add-review">
-      <h2>{{currentRestaurant.name}}</h2>
+      <h2>Review {{currentRestaurant.name}}</h2>
       <label for="title">Review Title:</label>
       <input class="form-control" type="text" #title name="title">
       <label for="rating">Rating:</label>

@@ -5,6 +5,7 @@ import { AppComponent }   from './app.component';
 import { RestaurantListComponent } from './restaurant-list.component';
 import { RestaurantComponent } from './restaurant.component';
 import { AddReviewComponent } from './add-review.component';
+import { CuisinePipe } from './cuisine.pipe';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { AddReviewComponent } from './add-review.component';
     RestaurantListComponent,
     RestaurantComponent,
     AddReviewComponent,
+    CuisinePipe,
    ],
   bootstrap:    [ AppComponent ]
 })

@@ -7,12 +7,13 @@ import { Review } from './review.model';
   template: `
     <div>
     <div>
-        <h4>{{restaurant.name}}<br>
-            {{restaurant.speciality}}<br>
-            {{restaurant.address}}<br>
-            {{restaurant.priceRange}}
-        </h4>
+        <h2>{{restaurant.name}}</h2>
+        <h4>Cuisine: {{restaurant.specialty}}<br>
+            Address: {{restaurant.address}}<br>
+            Price Range: {{restaurant.priceRange}}
+          </h4>
         <div *ngFor="let currentReview of reviews">
+        <h3>Reviews for {{restaurant.name}}</h3>
           <div class="well" *ngIf="currentReview.restaurantName === restaurant.name">
             <h4>{{currentReview.restaurantName}}</h4>
             <h4>{{currentReview.title}}</h4>
