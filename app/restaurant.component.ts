@@ -5,7 +5,7 @@ import { Review } from './review.model';
 @Component ({
   selector: 'restaurant-details',
   template: `
-    <div class="restaurant">
+    <div class="restaurant" *ngIf="restaurant">
       <div class="restaurant-info">
         <h2>{{restaurant.name}}</h2>
         <h4>Cuisine: {{restaurant.specialty}}<br>
@@ -16,7 +16,7 @@ import { Review } from './review.model';
         <h3>Reviews</h3>
         <div *ngFor="let currentReview of reviews">
           <div *ngIf="currentReview.restaurantName === restaurant.name" class="well">
-            <div *ngIf!="currentReview">
+            <div *ngIf="currentReview === null">
               <h4>NO REVIEWS</h4>
             </div>
             <div *ngIf="currentReview">

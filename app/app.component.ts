@@ -32,7 +32,7 @@ export class AppComponent {
     new Restaurant("All Souls", "American", "129 7th Street, Portland, OR", "$$$$"),
     new Restaurant("Five Guys", "American", "532 4th Street, Portland, OR", "$$")
   ];
-  selectedRestaurant: Restaurant = this.masterRestaurantList[0];
+  selectedRestaurant: Restaurant = null;
   showDetails(clickedRestaurant: Restaurant) {
     this.selectedRestaurant = clickedRestaurant;
   }
